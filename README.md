@@ -1,8 +1,8 @@
-#Knapsack Problem Solutions Demo
+# Knapsack Problem Solutions Demo
 
 by Alice Lafox ( alice@lafox.net )
 
-##Introduction
+## Introduction
 You want to send your friend a package with different things.
 Each thing you put inside the package has such parameters as index number, weight and cost. The
 package has a weight limit. Your goal is to determine which things to put into the package so that the
@@ -10,10 +10,10 @@ total weight is less than or equal to the package limit and the total cost is as
 You would prefer to send a package which weights less in case there is more than one package with the
 same price.
 
-##Solutions
+## Solutions
 This code presents two of many possible solutions of this known as Knapsack problem (https://en.wikipedia.org/wiki/Knapsack_problem)
 
-###1. Greedy Approximation Implementation
+### 1. Greedy Approximation Implementation
 It is a simple but fairly effective solution I implemented first. (see ProblemResolverGreedyApproxImpl.java )
 Is is based on comparing price/weight ratios of the items. 
 
@@ -22,7 +22,7 @@ Complexity of this implementation is O(n*log(n)), what equals of ArrayList's sor
  
 But this implementation fails on testCase3
  
-###2. Naive Brute Force Implementation
+### 2. Naive Brute Force Implementation
 (see ProblemResolverNaiveBruteForceImpl.java)
 
 This algorithm has complexity = O(2^n), because we have to check all combinations of items 
@@ -30,7 +30,7 @@ and compare them by price. But on the given constraints (up to 15 items) it is a
 And this algorithm works on all test cases.
  
  
-####Test cases
+#### Test cases
 
        1. 81 : (1,53.38,€45) (2,88.62,€98) (3,78.48,€3) (4,72.30,€76) (5,30.18,€9) (6,46.34,€48)
        2.  8 : (1,15.3,€34)
